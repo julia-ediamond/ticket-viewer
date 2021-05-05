@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    border: 0;
+    color: white;
+    width: 100%;
+}
+
+.content-block {
+    width: 100%;
+    max-width: 2080px;
+    margin: 2em;
+    color: #475562;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
