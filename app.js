@@ -6,6 +6,10 @@ const bodyParser = require("body-parser");
 const expressLayouts = require("express-ejs-layouts");
 const fetch = require('node-fetch');
 const btoa = require('btoa');
+const {
+    zendeskAuthHeaderValue,
+    zendeskApiUrl
+} = require('./client-config');
 const PORT = process.env.PORT || 3007;
 const app = express();
 
