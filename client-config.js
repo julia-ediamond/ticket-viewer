@@ -1,7 +1,13 @@
 const base64 = require('base-64');
+const dotenv = require('dotenv');
+dotenv.config()
+
+function ZendeskAuthHeaderValue() {
+    return 'Basic ' + Buffer.from(process.env.zendeskemail + '/token:' + process.env.zendesktoken).toString('base64');
+}
 
 
-var authHeaderKey = 'Authorization';
-var authHeaderValue = 'Basic ' + Buffer.from('iusharnina@gmail.com' + '/token:' + 'xn6R6HwQTO8WoYkGFhuA2kzKRERNzUieKVKQ4l3k').toString('base64');
-
-var url = 'https://ediamondhelp.zendesk.com/api/v2';
+module.exports = {
+    zendeskAuthHeaderValue: ZendeskAuthHeaderValue(),
+    zendeskApiUrl: process.env.zendeskurl
+}
