@@ -4,6 +4,8 @@ const path = require("path");
 const zendesk = require("node-zendesk");
 const bodyParser = require("body-parser");
 const expressLayouts = require("express-ejs-layouts");
+const fetch = require('node-fetch');
+const btoa = require('btoa');
 const PORT = process.env.PORT || 3007;
 const app = express();
 
@@ -15,7 +17,7 @@ app.use(express.urlencoded({
     extended: true
 }));
 app.use(expressLayouts)
-app.use("/static", express.static(path.join(__dirname, "public")));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 
 //routes
