@@ -1,15 +1,21 @@
 <h1>This is Ticket Viewer Homepage</h1>
 
-<button class="connect-button" id="connect-button">Connect to Zendesk</button>
 <ul>
     <% for (i=0; i < tickets.length; i++) { %>
 
-        <li>
+        <li class="ticketId">
             <%= tickets[i].id %>
-                <div>
-                    <%= JSON.stringify(tickets[i]) %>
-                </div>
+                <%= tickets[i].status %>
+                    <div class="ticket-card">
+
+                        <%= JSON.stringify(tickets[i]) %>
+                    </div>
         </li>
+
+
+
+
+
 
         <% } %>
 </ul>
