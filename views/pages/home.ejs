@@ -10,8 +10,18 @@
                 <b>Ticket status:</b>
                 <%= tickets[i].status %>
                     <div class="ticket-card">
+                        <b> Ticket created at: </b>
+                        <%= tickets[i].created_at %>
 
-                        <%= JSON.stringify(tickets[i]) %>
+                            <b> Ticket updated at: </b>
+                            <%= tickets[i].updated_at %>
+
+                                <b> Ticket subject: </b>
+                                <%= tickets[i].subject %>
+
+
+                                    <b> Ticket description: </b>
+                                    <%= tickets[i].description %>
                     </div>
         </li>
 
