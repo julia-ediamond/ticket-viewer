@@ -7,7 +7,7 @@ const {
 const fetch = require('node-fetch');
 const base64 = require('base-64');
 
-//get homepage of Ticket Viewer
+//get homepage of Ticket Viewer and display tickets 
 
 router.get("/", (req, res) => {
 

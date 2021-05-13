@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #54575e;
     margin: 0;
     border: 0;
     color: white;
@@ -20,9 +20,38 @@ body {
     width: 100%;
     max-width: 2080px;
     margin: 2em;
-    color: #475562;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 1.1em;
     line-height: 1.3em;
 }
+
+p, li, td, th {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 1.5em;
+    list-style-type: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #03b8af;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1, h2, h3, b {
+   color:#ffffff;
+   font-family: 'Crimson Text', serif;
+   text-align: center;
+   margin: 30px 0;
+   line-height: 1.25em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
+
+
+    
