@@ -26,11 +26,9 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 
 //routes
 const homeRouter = require("./routes/home");
-const ticketRouter = require("./routes/ticket");
 const errorRouter = require("./routes/error");
 
 app.use("/", homeRouter);
-app.use("/ticket", ticketRouter);
 app.use("/error", errorRouter);
 
 
