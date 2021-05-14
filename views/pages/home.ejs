@@ -24,12 +24,18 @@
                                     <%= tickets[i].description %>
                     </div>
         </li>
-
-
-
-
-
-
         <% } %>
 </ul>
+<div class="cursor">
+    <form method="get" action="/">
+        <input type="hidden" name="beforecursor" value="<%= meta.before_cursor %>" />
+        <button class="prev">Prev</button>
+    </form>
+
+    <form method="get" action="/">
+        <input type="hidden" name="aftercursor" value="<%= meta.after_cursor %>" />
+        <button class="next">NEXT</button>
+    </form>
+
+</div>
 <script type="text/javascript" src="/static/home.js"></script>

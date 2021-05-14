@@ -5,43 +5,47 @@ const {
     zendeskApiUrl
 } = require('../client-config');
 const fetch = require('node-fetch');
-const base64 = require('base-64');
 
-//get homepage of Ticket Viewer and display tickets 
+//get homepage of Ticket Viewer, display tickets and paginate 
 
 router.get("/", (req, res) => {
 
-    fetch(zendeskApiUrl + '/tickets', {
-        method: 'GET',
-        credentials: 'include',
-        headers: {
-            "Content-Type": "application/json",
-            'Authorization': zendeskAuthHeaderValue
-        }
-    }).then(function (response) {
-        if (response.ok) {
-            response.json().then(json => {
-                json.tickets.forEach(ticket => {
-                    console.log(ticket.id)
+    var getTicketsZendeskUrl = zendeskApiUrl + '/tickets' + '?page[size]=25'
+    if (req.query.aftercursor) {
+        getTicketsZendeskUrl += '&page[after]=' + req.query.aftercursor
+    } else if (req.query.beforecursor) {
+        getTicketsZendeskUrl += '&page[before]=' + req.query.beforecursor
+    }
+    fetch(getTicketsZendeskUrl,
+        {
+            method: 'GET',
+            credentials: 'include',
+            headers: {
+                "Content-Type": "application/json",
+                'Authorization': zendeskAuthHeaderValue
+            }
+        }).then(function (response) {
+            if (response.ok) {
+                response.json().then(json => {
+                    json.tickets.forEach(ticket => {
+                        console.log(ticket.id)
+                    })
+                    res.render("pages/home", {
+                        tickets: json.tickets,
+                        meta: json.meta
+                    })
                 });
-                res.render("pages/home", {
-                    tickets: json.tickets,
-                })
-            });
-        } else {
-            var error = new Error(response.statusText)
-            error.response = response
-            throw error
-        }
-    })
+            } else {
+                var error = new Error(response.statusText)
+                error.response = response
+                throw error
+            }
+        })
         .catch((err) => {
             res.render('pages/error', {
                 err: err
             })
         })
 });
-
-
-
 
 module.exports = router;
