@@ -20,11 +20,11 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 
 //routes
 const homeRouter = require("./routes/home");
-const errorRouter = require("./routes/error");
+const errorRouter = require("./routes/404");
 
 app.use("/", homeRouter);
 app.use("/home", homeRouter);
-app.use("/error", errorRouter);
+app.use("*", errorRouter);
 
 
 

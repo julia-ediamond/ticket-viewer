@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const client = require('../services/zendesk');
 
-//get homepage of Ticket Viewer, display tickets and paginate 
+//get homepage of Ticket Viewer and render tickets 
 
 router.get("/", (req, res) => {
     client.getTickets(req.query)
