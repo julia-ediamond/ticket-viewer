@@ -7,13 +7,13 @@ Zendesk ticket viewer is an application that queries [Named Link]Zendesk rest AP
 
 ## Features
 <details>
-           <summary>The application displays 25 tickets per page, switches between next and previous pages and displays individual ticket details. Please note that at the moment first page shows last ticket with id 28, because 3 tickets have been deleted.</summary> 
+           <summary>The application displays 25 tickets per page, switches between next and previous pages and displays individual ticket details. Please note that at the moment first page shows last ticket with id 28, because 3 tickets have been deleted.
 <details>
-           <summary>This project is my first attempt to call and communicate with rest API to source data. I chose to use node-fetch for it. I got to this decision through the process of trial and error while trying out other options.</summary>
+           <summary>This project is my first attempt to call and communicate with rest API to source data. I chose to use node-fetch for it. I got to this decision through the process of trial and error while trying out other options.
 <details>
-           <summary>Pagination is cursor-based.</summary> 
+           <summary>Pagination is cursor-based.
 <details>
-           <summary>Individual ticket details are displayed by jQuery. I realize that today jQuery is not so popular and necessary as it used to be, but it has allowed me to keep my code lightweight and laconic.</summary> 
+           <summary>Individual ticket details are displayed by jQuery. I realize that today jQuery is not so popular and necessary as it used to be, but it has allowed me to keep my code lightweight and laconic. 
 <details>
            <summary>The UI is aimed to be simple and usable.</summary> 
 
