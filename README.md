@@ -46,11 +46,11 @@ Authorization credentials are stored in .env file which usually should be gitign
 
 Pagination:
 
-![picture alt](https://drive.google.com/file/d/1jSGtrE9F9FHQ44B32AcMYlXRBiVeKjMJ/view?usp=sharing )
+![pagination](pages.png)
 
 404 error handling:
 
-![picture alt](https://drive.google.com/file/d/1Q-uMYBDdNEEHbrfNW9jFaAXjErMQ3fC3/view?usp=sharing )
+![404 handling](404handling.png)
 
 Pagination
 
