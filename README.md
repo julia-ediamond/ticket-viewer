@@ -3,7 +3,7 @@
 ## Description
 Zendesk ticket viewer is an application that queries [Named Link]Zendesk rest API to retrieve tickets for a certain account. The project is build as a part of Zendesk recruitment coding challenge.
 
-- - - -
+
 
 ## Features
 <details>
@@ -17,7 +17,6 @@ Zendesk ticket viewer is an application that queries [Named Link]Zendesk rest AP
 <details>
            <summary>The UI is aimed to be simple and usable.
 
-- - - -
 
 ## Technologies
 * Nodejs
@@ -25,7 +24,7 @@ Zendesk ticket viewer is an application that queries [Named Link]Zendesk rest AP
 * HTML
 * CSS
 
-- - - -
+
 
 ## Dependancies
 * Expressjs
@@ -34,7 +33,6 @@ Zendesk ticket viewer is an application that queries [Named Link]Zendesk rest AP
 * Dotenv
 * node-fetch
 
-- - - -
 
 ## Installation
 
@@ -42,13 +40,12 @@ Download or clone the repo and run the following in the same folder.
 
 `npm install`
 
-- - - -
+
 
 ## Getting Started
 
 Authorization credentials are stored in .env file which usually should be gitignored in order not to compromise them. To help Zendesk recruitment team to check the project .env file will be pushed to the repo. 
 
-- - - -
 
 ## Author
 Iulia (Julia) Sharnina - iusharnina@gmail.com
