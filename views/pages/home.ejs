@@ -1,5 +1,4 @@
-<h1>This is Ticket Viewer Homepage</h1>
-<h2>Here are all tickets for your account</h2>
+<h1>This is Zendesk Ticket Viewer</h1>
 
 <ul>
     <% for (i=0; i < tickets.length; i++) { %>
@@ -29,12 +28,12 @@
 <div class="cursor">
     <form method="get" action="/">
         <input type="hidden" name="beforecursor" value="<%= meta.before_cursor %>" />
-        <button class="prev">Prev</button>
+        <button class="prev">PREVIOUS PAGE</button>
     </form>
 
     <form method="get" action="/">
         <input type="hidden" name="aftercursor" value="<%= meta.after_cursor %>" />
-        <button class="next">NEXT</button>
+        <button class="next">NEXT PAGE</button>
     </form>
 
 </div>
