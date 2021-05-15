@@ -15,7 +15,7 @@ Zendesk ticket viewer is an application that queries [Named Link]Zendesk rest AP
 <details>
            <summary>Individual ticket details are displayed by jQuery. I realize that today jQuery is not so popular and necessary as it used to be, but it has allowed me to keep my code lightweight and laconic. 
 <details>
-           <summary>The UI is aimed to be simple and usable.</summary> 
+           <summary>The UI is aimed to be simple and usable.
 
 - - - -
 
