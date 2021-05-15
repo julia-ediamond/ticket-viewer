@@ -1,7 +1,7 @@
 # Zendesk Ticket Viewer #
 
 ## Description
-Zendesk ticket viewer is an application that queries [Named Link](https://www.zendesk.com/ "Zendesk") rest API to retrieve tickets for a certain account. The project is build as a part of Zendesk recruitment coding challenge.
+Zendesk ticket viewer is an application that queries [Zendesk](https://www.zendesk.com/ "Zendesk") rest API to retrieve tickets for a certain account. The project is build as a part of Zendesk recruitment coding challenge.
 
 
 
