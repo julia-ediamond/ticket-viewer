@@ -42,7 +42,7 @@ Download or clone the repo and run the following in the same folder.
 Authorization credentials are stored in .env file which usually should be gitignored in order not to compromise them. To help Zendesk recruitment team to check the project .env file will be pushed to the repo. 
 
 ## Application preview
-![picture alt](https://drive.google.com/file/d/1AogP75NP4RsW8VvY41ddj5gd162PMpyi/view?usp=sharing )
+!(https://drive.google.com/file/d/1AogP75NP4RsW8VvY41ddj5gd162PMpyi/view?usp=sharing )
 
 Pagination:
 
