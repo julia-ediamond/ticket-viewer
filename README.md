@@ -38,7 +38,7 @@ Download or clone the repo and run the following in the same folder.
 
 The project runs on localhost:3007
 
-Authorization credentials are stored in .env file which usually should be gitignored in order not to compromise them. Since this project is submitted for review, the .env file is made public to help the Zendesk recruitment team to check the project.  
+Authorization credentials are stored in .env file which usually should be gitignored in order not to compromise them. Since this project is submitted for review, the .env file is made public to help the Zendesk recruitment team to check it.  
 
 ## Application preview
 ![app preview](first_page-screen.png)
