@@ -47,9 +47,9 @@ Pagination:
 
 ![pagination](pagination-screen.png)
 
-404 error handling:
+Individual ticket details
 
-![404 handling](ticket-details-screen.png)
+![ticket-details](ticket-details-screen.png)
 
 Pagination
 
