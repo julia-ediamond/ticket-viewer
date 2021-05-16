@@ -1,40 +1,50 @@
 <h1>This is Zendesk Ticket Viewer</h1>
+<% if (tickets.length> 0) { %>
+    <ul>
+        <% for (i=0; i < tickets.length; i++) { %>
 
-<ul>
-    <% for (i=0; i < tickets.length; i++) { %>
-
-        <li class="ticketId">
-            <b>Ticket ID:</b>
-            <%= tickets[i].id %>
-                <b>Ticket status:</b>
-                <%= tickets[i].status %>
-                    <div class="ticket-card">
-                        <b> Ticket created at: </b>
-                        <%= tickets[i].created_at %>
-
-                            <b> Ticket updated at: </b>
-                            <%= tickets[i].updated_at %>
-
-                                <b> Ticket subject: </b>
-                                <%= tickets[i].subject %>
-
-
-                                    <b> Ticket description: </b>
+            <li class="ticketId">
+                <b>Ticket ID:</b>
+                <%= tickets[i].id %>
+                    <b>Ticket status:</b>
+                    <%= tickets[i].status %>
+                        <div class="ticket-card">
+                            <article>
+                                <h3>Ticket created at: </h3>
+                                <p>
+                                    <%= tickets[i].created_at %>
+                                </p>
+                                <h3>Ticket subject:</h3>
+                                <p>
+                                    <%= tickets[i].subject %>
+                                </p>
+                                <h3>Ticket description: </h3>
+                                <p>
                                     <%= tickets[i].description %>
-                    </div>
-        </li>
+                                </p>
+                            </article>
+                        </div>
+            </li>
+            <% } %>
+    </ul>
+    <% } else { %>
+        <p>You currently have no tickets.</p>
         <% } %>
-</ul>
-<div class="cursor">
-    <form method="get" action="/">
-        <input type="hidden" name="beforecursor" value="<%= meta.before_cursor %>" />
-        <button class="prev">PREVIOUS PAGE</button>
-    </form>
 
-    <form method="get" action="/">
-        <input type="hidden" name="aftercursor" value="<%= meta.after_cursor %>" />
-        <button class="next">NEXT PAGE</button>
-    </form>
 
-</div>
-<script type="text/javascript" src="/static/home.js"></script>
+
+
+            <div class="cursor">
+                <form method="get" action="/">
+                    <input type="hidden" name="beforecursor" value="<%= meta.before_cursor %>" />
+                    <button class="prev">PREVIOUS PAGE</button>
+                </form>
+
+                <form method="get" action="/">
+                    <input type="hidden" name="aftercursor" value="<%= meta.after_cursor %>" />
+                    <button class="next">NEXT PAGE</button>
+                </form>
+
+            </div>
+
+            <script type="text/javascript" src="/static/home.js"></script>
