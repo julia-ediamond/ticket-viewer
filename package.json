@@ -1,10 +1,10 @@
 {
   "name": "zendesk-coding-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Zendesk Ticket Viewer to display tickets list, tickets details and split tickets in pages.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --reporter spec",
     "dev": "nodemon -e js,ejs,css app.js"
   },
   "author": "",
@@ -12,15 +12,17 @@
   "dependencies": {
     "base-64": "^1.0.0",
     "body-parser": "^1.19.0",
-    "btoa": "^1.2.1",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
     "dotenv": "^9.0.2",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
-    "express-paginate": "^1.0.2",
+    "mocha": "^8.4.0",
     "morgan": "^1.10.0",
+    "nock": "^13.0.11",
     "node-fetch": "^2.6.1",
-    "node-zendesk": "^2.0.7",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2"
   }
 }
