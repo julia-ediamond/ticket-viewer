@@ -51,7 +51,6 @@ Individual ticket details
 
 ![ticket-details](ticket-details-screen.png)
 
-Pagination
 
 ## Tests
 
