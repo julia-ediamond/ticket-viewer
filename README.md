@@ -7,7 +7,7 @@ Zendesk ticket viewer is an application that queries [Zendesk](https://www.zende
 
 ## Features
 <details>
-           <summary>The application displays 25 tickets per page, switches between next and previous pages, and displays individual ticket details. Please note that at the moment the first page shows the last ticket with id 28, because 3 tickets have been deleted.
+           <summary>The application displays 25 tickets per page, switches between next and previous pages, and displays individual ticket details. There is handling for 404 error.  Please note that at the moment the first page shows the last ticket with id 28, because 3 tickets have been deleted.
                       
 <details>
            <summary>This project is my first attempt to call and communicate with the rest API from the back-end. Although, I have done node projects before, and this task seemed fairly simple in the beginning it took me a while to find proper tools to perform it. After a process of trial and error, I chose to use node-fetch for communication with Zendesk API.  
@@ -18,6 +18,7 @@ Zendesk ticket viewer is an application that queries [Zendesk](https://www.zende
            <summary>Individual ticket details are displayed by jQuery. I realize that today jQuery is not so popular and necessary as it used to be, but it has allowed me to keep my code lightweight and laconic.  
 <details>
            <summary>The UI is kept simple and usable.
+                      
 
 
 ## Technologies
