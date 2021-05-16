@@ -42,15 +42,15 @@ Download or clone the repo and run the following in the same folder.
 Authorization credentials are stored in .env file which usually should be gitignored in order not to compromise them. To help Zendesk recruitment team to check the project .env file will be pushed to the repo. 
 
 ## Application preview
-![app preview](zendesk_screen.png)
+![app preview](first_page-screen.png)
 
 Pagination:
 
-![pagination](pages.png)
+![pagination](pagination-screen.png)
 
 404 error handling:
 
-![404 handling](404handling.png)
+![404 handling](ticket-details-screen.png)
 
 Pagination
 
