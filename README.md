@@ -65,4 +65,4 @@ Unit tests are written with Mocha & Chai. There are 5 tests. To run tests type i
            <summary>This is the first time I have written unit tests. I have genuinely enjoyed the process of learning how to do it, while I realize that this part requires more research, which will be my target for the next couple of weeks. 
 
 ## Author
-Iulia (Julia) Sharnina - iusharnina@gmail.com
+Iulia (Julia) Sharnina
